@@ -9,8 +9,14 @@ gem 'sqlite3'
 # admin
 gem 'activeadmin', github: 'gregbell/active_admin'
 
+# paperclip
+gem 'paperclip', '~> 4.1'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
+
+# angular js
+gem 'angularjs-rails'
 
 # bootstrap
 gem 'bootstrap-sass', '~> 3.2.0'
