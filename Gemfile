@@ -6,6 +6,10 @@ gem 'rails', '4.1.4'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
+# for active_admin
+gem 'meta_search'
+gem 'devise'
+
 # admin
 gem 'activeadmin', github: 'gregbell/active_admin'
 
@@ -14,6 +18,7 @@ gem 'paperclip', '~> 4.1'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
+
 
 # angular js
 gem 'angularjs-rails'
