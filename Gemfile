@@ -7,8 +7,11 @@ gem 'rails', '4.1.4'
 gem 'sqlite3'
 
 # for active_admin
-gem 'meta_search'
+#gem 'meta_search'
+gem 'formtastic', github: 'justinfrench/formtastic'
 gem 'devise'
+gem 'kaminari'
+gem 'will_paginate', '~> 3.0'
 
 # admin
 gem 'activeadmin', github: 'gregbell/active_admin'
@@ -35,6 +38,7 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+gem 'jquery-ui-rails', '~> 4.2.1'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
