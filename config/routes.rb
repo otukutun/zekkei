@@ -5,7 +5,11 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  resources :locations
+  resources :locations do
+    collection do
+      get 'fetch_location'
+    end
+  end
   root 'locations#show'
 
   # Example of regular route:
