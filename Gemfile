@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+source 'https://rails-assets.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -21,25 +22,22 @@ gem 'paperclip', '~> 4.1'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
-gem 'compass-rails', '~> 1.1.3'
-
-# angular js
-gem 'angularjs-rails'
-
-# bootstrap
-gem 'bootstrap-sass', '~> 3.2.0'
-gem 'autoprefixer-rails'
-# Use Uglifier as compressor for JavaScript assets
+#gem 'compass-rails', '~> 1.1.3'
 gem 'uglifier', '>= 1.3.0'
-# Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
+gem 'bootstrap-sass', '~> 3.2.0'
+
+gem 'rails-assets-jquery'
+gem 'rails-assets-jquery-ui'
+gem 'rails-assets-jquery.scrollTo'
+gem 'rails-assets-jquery.localScroll'
+#gem 'rails-assets-bootstrap'
+gem 'rails-assets-angular'
+gem 'rails-assets-leaflet'
+
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 
-# Use jquery as the JavaScript library
-gem 'jquery-rails'
-gem 'jquery-ui-rails', '~> 4.2.1'
-gem 'jquery-scrollto-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder

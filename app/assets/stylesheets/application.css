@@ -11,6 +11,7 @@
  * file per style scope.
  *
  *= require bootstrap
+ *= require leaflet
  *= require_drectory ./modules
  *= require_drectory ./partials
  *= require_drectory ./vendor

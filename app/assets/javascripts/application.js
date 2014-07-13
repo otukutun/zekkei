@@ -11,8 +11,9 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery_ujs
+//= require jquery-ui
 //= require jquery.scrollTo
+//= require jquery.localScroll
 //= require bootstrap
 //= require turbolinks
 //= require main
