@@ -1,0 +1,167 @@
+/*------------------------------------------------*/
+/*	Projects
+/*------------------------------------------------*/
+
+
+
+.projects {
+	@include background-size(cover);
+
+	background: {
+		image: image-url("project-bg.png");
+		repeat: no-repeat;
+		background-color: $projects-bg-color;
+	} 
+
+	color: $base-font-color-light;
+
+	.heading {
+		color: $base-font-color-light;
+	}
+}
+
+/* project grid */
+.project-grid {
+	@include inline-block-list;
+
+	max-width: 1300px;
+	margin: 35px auto 0 auto;	
+	text-align: center;
+
+	@media screen and (max-width: 31.5em) {
+		padding: 10px 10px 0 10px;
+	}
+
+	li {		
+		margin: 0 0 50px 0;				
+		text-align: left;
+		position: relative;
+		white-space: inherit;
+
+		@media screen and (max-width: 31.5em) {
+			width: 100%;
+			min-width: 300px;
+		}
+
+		@media (max-width: 991px) {
+			display: block;	
+		}
+
+	}
+
+	figure {
+		margin: 0;
+		position: relative;
+
+		img {
+			width: 100%;
+			display: block;
+			position: relative;
+
+			@media (min-width: 992px) {
+				max-width: 100%;
+			}
+		}
+
+		.project-item-info {
+			font-weight: 300;
+
+			.sub-heading {
+				font-size: 1.1em;
+				line-height: 1;				
+			}
+
+		}
+	}
+
+	figcaption {		
+		top: 0;
+		left: 0;
+		
+		@media (min-width: 992px) {
+			position: absolute;
+			background: rgba(#d2d2d2, 0.1);
+		}
+	}
+
+}
+
+/* effect */
+@media (min-width: 992px) {
+
+	.project-effect-shrink {
+
+		figure {
+
+			img {
+				@include single-transition(transform, 0.4s);
+				
+				z-index: 10;
+			}
+
+			&:hover {
+
+				img {
+					@include transform(scale(0.4));
+				}
+
+				figcaption {
+					@include opacity(1);
+					@include transform(scale(1))
+				}
+			}
+
+			.project-item-info {
+				width: 100%;
+				position: absolute;
+				bottom: 5px;
+				padding-left: 20px;			
+
+				p {
+					font-size: 0.9em;
+					color: #c5c5c5;
+					margin-bottom: 5px;
+				}
+
+				a {
+					position: absolute;
+					right: 20px;
+					top: 10px;
+					padding: 7px 12px;
+					font-size: 0.8em;
+					color: lighten($secondary-accent-color, 40%);
+				}		
+			}
+		}
+
+		figcaption {
+			@include opacity(0);
+			@include backface-visibility(hidden);
+			@include transform(scale(0.7));
+			@include transition(transform 0.4s, opacity 0.4s);
+
+			height: 100%;
+			width: 100%;
+			
+		}
+		
+	}
+
+}
+
+
+/* IE Fallback */
+.ie8 .project-effect-shrink {
+	figure {
+		img {
+			z-index: 0;
+		}
+
+		.project-item-info {			
+			min-height: 100px;
+			background: #000;
+			bottom: -1px;
+		}	
+	}	
+}
+

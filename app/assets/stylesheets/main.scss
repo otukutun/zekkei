@@ -1,0 +1,32 @@
+/*	
+*	############################################################################
+*	
+*	CVilized Resume/CV HTML Template Style
+*	---------------------------------------------------------------------
+*
+*	Version		1.0
+*	Author		The Develovers
+*	Copyright	Copyright 2013 The Develovers
+*	
+*	############################################################################
+*/
+
+
+
+// Import main
+@import "vendor/bootstrap";
+@import "vendor/font-awesome";
+@import "vendor/timeline";
+@import "modules/variables";
+@import "modules/mixins";
+
+
+// Import partials
+@import "partials/base";
+@import "partials/navigation";
+@import "partials/header";
+@import "partials/about-me";
+@import "partials/resume";
+@import "partials/projects";
+@import "partials/contacts";
+@import "partials/footer";

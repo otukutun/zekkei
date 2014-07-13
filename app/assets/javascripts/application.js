@@ -12,5 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.scrollTo
+//= require bootstrap
 //= require turbolinks
-//= require_tree .
+//= require main

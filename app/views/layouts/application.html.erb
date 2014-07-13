@@ -1,12 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Zekkei</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+<title>Zekkei</title>
+<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+<%= csrf_meta_tags %>
 </head>
-<body>
+<body data-spy="scroll" data-target="#main-nav">
+<!-- WRAPPER -->
+<div class="wrapper">
+
+  <!-- main navigation -->
+  <nav class="navbar navbar-default navbar-fixed-top" id="main-nav" role="navigation">
+    <div class="container">
+      <!-- brand and toggle -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".main-nav-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>         
+      </div>
+
+      <!-- navigation links -->
+      <div class="collapse navbar-collapse main-nav-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#about-me">ABOUT ME</a></li>
+          <li><a href="#contacts">CONTACTS</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end main navigation -->
+
+  <!-- header -->
+  <header class="jumbotron header" id="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 left">
+          <div class="avatar">
+            <%= image_tag 'profile-picture.png', class: 'img-responsive', alt: 'Profile Picture' %>
+          </div>
+        </div>
+        <div class="col-md-6 right">
+          <h1 class="hide">BOB SMITH</h1>
+          <h2 class="heading">HELLO, I'M BOB</h2>
+          <p>A web designer from New York. Want to know more about me?</p>
+          <a href="#about-me" class="btn btn-default btn-lg">READ MORE</a><a href="#" class="btn btn-primary btn-lg">DOWNLOAD vCARD</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- end header -->
+
+
+  <!-- contacts -->
+  <section class="section contacts" id="contacts">
+    <div class="container">
+      <h2 class="heading">CONTACTS</h2>
+      <p>Continually promote world-class methodologies through equity invested results. Monotonectally target stand-alone ideas via cross-media collaboration and idea-sharing. Seamlessly grow innovative markets.</p>
+      <div class="row google-map">
+        <div class="map-canvas"></div>
+      </div>
+     </div>
+    </div>  
+  </section>
+  <!-- end contacts -->
+
+  <!-- footer -->
+  <footer class="footer">
+    <p>Copyright 2013 The Develovers. All Rights Reserved.</p>
+  </footer>
+  <!-- end footer -->
+
+</div>
+<!-- END WRAPPER -->
 
 <%= yield %>
 

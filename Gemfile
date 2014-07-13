@@ -21,7 +21,7 @@ gem 'paperclip', '~> 4.1'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
-
+gem 'compass-rails', '~> 1.1.3'
 
 # angular js
 gem 'angularjs-rails'
@@ -39,6 +39,7 @@ gem 'coffee-rails', '~> 4.0.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 gem 'jquery-ui-rails', '~> 4.2.1'
+gem 'jquery-scrollto-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder

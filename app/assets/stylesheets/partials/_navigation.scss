@@ -1,0 +1,62 @@
+/*------------------------------------------------*/
+/*	Navigation
+/*------------------------------------------------*/
+
+
+
+.main-nav-collapse {
+	text-align: center;
+}
+
+.navbar-default {
+	background-color: $primary-accent-color;
+	border: none;
+
+	.navbar-nav {
+		@include inline-block;
+
+		margin: 0 auto;
+		float: none;
+
+		li {
+			
+			a {
+				font-size: 0.9em;
+				color: $base-font-color-light;
+				
+				&:hover,
+				&:focus {
+					color: $base-font-color-light;
+					background-color: lighten($primary-accent-color, 10%);
+				}
+			}
+
+			&.active {
+				a {
+					color: $base-font-color-light;
+					background-color: lighten($primary-accent-color, 10%);
+				
+					&:hover,
+					&:focus {
+						color: $base-font-color-light;
+						background-color: lighten($primary-accent-color, 10%);
+					}
+				}
+			}
+		}
+	}
+
+	.navbar-toggle {
+		border-color: $base-font-color-light;
+
+		&:hover,
+		&:focus {
+			background-color: lighten($primary-accent-color, 3%);
+		}
+
+		.icon-bar {
+			background-color: $base-font-color-light;		
+		}
+	}
+	
+}

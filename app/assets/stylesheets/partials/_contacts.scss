@@ -1,0 +1,132 @@
+/*------------------------------------------------*/
+/*	Contacts
+/*------------------------------------------------*/
+
+
+
+.contacts {
+	background-color: $contacts-bg-color;
+
+	.google-map {
+		margin: 40px 0;
+	}
+}
+
+/* contact form */
+.contact-form {
+	overflow: hidden;
+	margin-bottom: 40px;
+
+	input, textarea {
+		@include inline-block;
+		@include box-sizing(border-box);
+
+		padding: 12px;
+		margin-bottom: 7px; 
+		min-height: 3em;
+	}
+
+	input {
+		&#name {
+			margin-right: 1%;
+		}
+
+		&#email {
+			float: right;
+		}
+
+		&#name, &#email {
+			width: 100%;
+
+			@media (min-width: 768px) {
+				width: 49%;
+			}
+		}
+
+		&#subject {
+			width: 100%;
+		}
+
+		&[type="submit"] {
+			margin: 0;
+			font-size: 1.2em;
+			padding: 15px 25px;
+		}
+	} 
+
+	textarea {
+		width: 100%;
+		display: block;
+		padding: 14px;
+		min-height: 160px;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	textarea {
+		@include border-radius(3px);
+		@include placeholder-color(darken($contacts-bg-color, 10%));
+		@include box-shadow(none !important);
+
+
+		background-color: lighten($contacts-bg-color, 5%);
+		border: 1px solid darken($contacts-bg-color, 5%);		
+		color: darken($contacts-bg-color, 30%);
+
+		&:focus {
+			outline: none;
+			border: 1px solid darken($contacts-bg-color, 20%) !important;
+		}
+
+	}
+
+	.alert,
+	label {
+		display: none;
+	}
+
+}
+
+/* google maps */
+.map-canvas {
+	height: $map-height;
+}
+
+.address-lines {
+	margin-top: 40px;
+}
+
+/* IE fallback */
+.ie8 {
+	input[type="text"],
+	input[type="email"] {
+		min-height: 2em;
+		padding: 5px 0 0 5px;		
+	}
+
+	.contact-form {
+		input[type="submit"] {
+			padding: 0 15px;
+		}
+
+		input {
+			&#name,
+			&#email {
+				display: block;
+				width: 100%;
+			}			
+		}
+	
+		label {
+			display: block;
+		}
+	} 
+
+	.google-map {
+		display: none; /* causing problem on IE8, so we didn't display it */
+	}
+
+}
+
+
+
