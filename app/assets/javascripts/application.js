@@ -15,5 +15,6 @@
 //= require jquery.scrollTo
 //= require jquery.localScroll
 //= require bootstrap
+//= require angular
 //= require turbolinks
 //= require main
