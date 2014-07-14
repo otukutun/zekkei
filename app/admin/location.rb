@@ -17,7 +17,7 @@ ActiveAdmin.register Location do
   form do |f|
     f.inputs "location image" do
       f.input :name
-      f.input :photo, :as => :file, :hint => f.object.new_record? ? "" : f.template.image_tag(f.object.image.url(:thumb))
+      f.input :photo, :as => :file, :hint => f.object.new_record? ? "" : f.template.image_tag(f.object.photo.url(:thumb))
       f.input :longitude
       f.input :latitude
       f.input :description
