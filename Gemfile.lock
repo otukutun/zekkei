@@ -120,6 +120,7 @@ GEM
       activesupport (>= 3.0.0)
       cocaine (~> 0.5.3)
       mime-types
+    pg (0.17.1)
     polyamorous (1.0.0)
       activerecord (>= 3.0)
     polyglot (0.3.5)
@@ -146,6 +147,11 @@ GEM
     rails-assets-jquery.scrollTo (1.4.12)
       rails-assets-jquery (>= 1.8)
     rails-assets-leaflet (0.7.3)
+    rails_12factor (0.0.2)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.2)
+    rails_stdout_logging (0.0.3)
     railties (4.1.4)
       actionpack (= 4.1.4)
       activesupport (= 4.1.4)
@@ -213,6 +219,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   kaminari
   paperclip (~> 4.1)
+  pg
   rails (= 4.1.4)
   rails-assets-angular
   rails-assets-jquery
@@ -220,6 +227,7 @@ DEPENDENCIES
   rails-assets-jquery.localScroll
   rails-assets-jquery.scrollTo
   rails-assets-leaflet
+  rails_12factor
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   spring

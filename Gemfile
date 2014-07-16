@@ -7,6 +7,9 @@ gem 'rails', '4.1.4'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
+gem 'rails_12factor', group: :production
+gem 'pg', group: :production
+
 # for active_admin
 #gem 'meta_search'
 gem 'formtastic', github: 'justinfrench/formtastic'
@@ -65,3 +68,4 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+ruby "2.1.1"
