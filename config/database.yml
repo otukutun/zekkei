@@ -14,6 +14,10 @@ default: &default
 development:
   <<: *default
   database: db/development.sqlite3
+  bucket: zekkei-switch-dev
+  aws_api_key: ENV['AWS_KEY_ID']
+  aws_api_secret: ENV['AWS_KEY_SECRET']
+
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -23,3 +27,6 @@ test:
   database: db/test.sqlite3
 
 production:
+  bucket: zekkei-switch
+  aws_api_key: ENV['AWS_KEY_ID']
+  aws_api_secret: ENV['AWS_KEY_SECRET']
