@@ -8,10 +8,12 @@ Bundler.require(*Rails.groups)
 
 module Zekkei
   class Application < Rails::Application
-    config.serve_static_assets = true
-    config.assets.initialize_on_precompile = false
-    config.assets.precompile += %w[active_admin.css active_admin.js print.css]
-    config.assets.precompile += %w[active_admin/print.css]
+    #config.serve_static_assets = true
+    config.assets.compile = false
+    config.serve_static_assets = false
+    #config.assets.initialize_on_precompile = false
+    #config.assets.precompile += %w[active_admin.css active_admin.js print.css]
+    #config.assets.precompile += %w[active_admin/print.css]
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
