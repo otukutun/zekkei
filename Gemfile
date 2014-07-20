@@ -10,6 +10,9 @@ gem 'sqlite3', group: :development
 gem 'rails_12factor', group: :production
 gem 'pg', group: :production
 
+#rails config
+gem 'rails_config'
+
 # for active_admin
 #gem 'meta_search'
 gem 'formtastic', github: 'justinfrench/formtastic'
@@ -22,6 +25,7 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 
 # paperclip
 gem 'paperclip', '~> 4.1'
+gem 'aws-sdk'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
