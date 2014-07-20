@@ -153,6 +153,9 @@ GEM
       railties (= 4.1.4)
       sprockets-rails (~> 2.0)
     rails-assets-angular (1.2.20)
+    rails-assets-angular-google-maps (1.1.8)
+      rails-assets-angular (~> 1.2.0)
+      rails-assets-lodash (~> 2.4.1)
     rails-assets-jquery (2.1.1)
     rails-assets-jquery-ui (1.11.0)
       rails-assets-jquery (>= 1.6)
@@ -162,6 +165,7 @@ GEM
     rails-assets-jquery.scrollTo (1.4.12)
       rails-assets-jquery (>= 1.8)
     rails-assets-leaflet (0.7.3)
+    rails-assets-lodash (2.4.1)
     rails_12factor (0.0.2)
       rails_serve_static_assets
       rails_stdout_logging
@@ -241,6 +245,7 @@ DEPENDENCIES
   pg
   rails (= 4.1.4)
   rails-assets-angular
+  rails-assets-angular-google-maps
   rails-assets-jquery
   rails-assets-jquery-ui
   rails-assets-jquery.localScroll

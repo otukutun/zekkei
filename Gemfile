@@ -40,6 +40,7 @@ gem 'rails-assets-jquery.scrollTo'
 gem 'rails-assets-jquery.localScroll'
 #gem 'rails-assets-bootstrap'
 gem 'rails-assets-angular'
+gem 'rails-assets-angular-google-maps'
 gem 'rails-assets-leaflet'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
