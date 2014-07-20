@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang='ja' ng-app>
 <head>
 <title>Zekkei</title>
 <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -8,7 +8,7 @@
 </head>
 <body data-spy="scroll" data-target="#main-nav">
 <!-- WRAPPER -->
-<div class="wrapper">
+<div class="wrapper" ng-controller="locationCtrl">
 
   <!-- main navigation -->
   <nav class="navbar navbar-default navbar-fixed-top" id="main-nav" role="navigation">
@@ -26,8 +26,8 @@
       <!-- navigation links -->
       <div class="collapse navbar-collapse main-nav-collapse">
         <ul class="nav navbar-nav">
-          <li><a href="#about-me">ABOUT ME</a></li>
-          <li><a href="#contacts">CONTACTS</a></li>
+          <li><a href="#about-me">ホーム</a></li>
+          <li><a href="#contacts">マップ</a></li>
         </ul>
       </div>
     </div>

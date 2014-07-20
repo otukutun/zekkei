@@ -17,4 +17,5 @@
 //= require bootstrap
 //= require angular
 //= require turbolinks
+//= require locations
 //= require main
