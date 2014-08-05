@@ -18,6 +18,7 @@
 # For Mac
 /***/.DS_Store
 
+.DS_Store
 #photo
 /public/system/*
 

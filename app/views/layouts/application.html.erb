@@ -3,7 +3,8 @@
 <head>
 <title>Zekkei</title>
 <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-<%= javascript_include_tag '//maps.googleapis.com/maps/api/js?sensor=false' %>
+<%= javascript_include_tag 'http://maps.google.com/maps/api/js?sensor=false' %>
+
 <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
 <%= csrf_meta_tags %>
@@ -28,8 +29,7 @@
       <!-- navigation links -->
       <div class="collapse navbar-collapse main-nav-collapse">
         <ul class="nav navbar-nav">
-          <li><a href="#about-me">ホーム</a></li>
-          <li><a href="#contacts">マップ</a></li>
+          <li><%= link_to 'ホーム', root_path %></li>
         </ul>
       </div>
     </div>

@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery-ui
+//= require jquery.ui.map.min
 //= require jquery.scrollTo
 //= require jquery.localScroll
 //= require bootstrap

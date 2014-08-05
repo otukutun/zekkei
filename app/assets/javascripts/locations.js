@@ -1,13 +1,29 @@
 $(function(){
   $.ajax({
     type: "GET", 
-    url: "locations/fetch_location", 
+    url: "locations/fetch_location.json", 
     datatype: "json",
     success: function(json) {
+      console.log('test');
       $('#location').text(json['name']);
       $('#description').text(json['description']);
       $('#photo').attr('src', json['photo']);
-      console.log(json);
     }
+  });
+
+  $('#refresh').click(function() {
+  $.ajax({
+    type: "GET", 
+    url: "locations/fetch_location.json", 
+    datatype: "json",
+    success: function(json) {
+      console.log(json);
+      // console.log(json['name']);
+
+      $('#location').text(json['name']);
+      $('#description').text(json['description']);
+      $('#photo').attr('src', json['photo']);
+    }
+  });
   });
 });

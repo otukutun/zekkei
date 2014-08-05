@@ -1,6 +1,6 @@
 class LocationsController < ApplicationController
   def show
-
+    @location = Location.where(:flag => true).sample
   end
 
   def fetch_location
