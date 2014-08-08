@@ -10,6 +10,8 @@ gem 'sqlite3', group: :development
 gem 'rails_12factor', group: :production
 gem 'pg', group: :production
 
+gem 'newrelic_rpm'
+
 #rails config
 gem 'rails_config'
 
