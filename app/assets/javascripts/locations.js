@@ -21,7 +21,11 @@ $(function(){
       // console.log(json['name']);
 
       $('#location').text(json['name']);
-      $('#description').text(json['description']);
+      if (json['author']) {
+        $('#description').text(json['description'] + 'by ' + json['creative_commons']);
+      } else {
+        $('#description').text(json['description']);
+      }
       $('#photo').attr('src', json['photo']);
     }
   });
