@@ -13,9 +13,9 @@
 //= require jquery
 //= require jquery-ui
 //= require jquery.ui.map.min
-//= require jquery.scrollTo
-//= require jquery.localScroll
+//= require bootstrap
+//= require sandstone/loader
+//= require sandstone/bootswatch
 //= require bootstrap
 //= require turbolinks
 //= require locations
-//= require main

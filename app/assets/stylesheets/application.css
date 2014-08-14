@@ -12,9 +12,6 @@
  *
  *= require bootstrap
  *= require leaflet
- *= require_drectory ./modules
- *= require_drectory ./partials
- *= require_drectory ./vendor
- *= require main
  *= require_self
+ *= require sandstone
  */
