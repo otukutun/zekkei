@@ -4,3 +4,7 @@
  *= require sandstone/loader
  *= require sandstone/bootswatch
 */
+
+body {
+        padding-top: 50px;
+}
