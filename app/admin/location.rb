@@ -4,7 +4,7 @@ ActiveAdmin.register Location do
   # See permitted parameters documentation:
   # https://github.com/gregbell/active_admin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
-  permit_params :name, :photo, :description, :longitude, :latitude, :url, :flag, :creative_commons, :author, :reference_url
+  permit_params :name, :photo, :description, :longitude, :latitude, :url, :flag, :creative_commons, :author, :reference_url, :address
   #
   # or
   #
@@ -26,6 +26,7 @@ ActiveAdmin.register Location do
       f.input :creative_commons
       f.input :author
       f.input :reference_url
+      f.input :address
       f.actions
     end
   end
@@ -44,6 +45,7 @@ ActiveAdmin.register Location do
       row :creative_commons
       row :author
       row :reference_url
+      row :address
     end
   end
   

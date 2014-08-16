@@ -9,7 +9,7 @@
       </div>
       <div class="col-md-6 right">
         <h1 class="hide"></h1>
-        <h2 class="heading" id="location"><%= @location.name %></h2>
+        <h2 class="heading" id="location"><%= @location.name %>&nbsp;<small><%= @location.address %></small></h2>
         <p id="description"><%= @location.description %></p>
         <% if @location.creative_commons %>
           <div class="row">
