@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery-ui
-//= require jquery.ui.map.min
 //= require bootstrap
 //= require sandstone/loader
 //= require sandstone/bootswatch

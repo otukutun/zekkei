@@ -29,6 +29,8 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'paperclip', '~> 4.1'
 gem 'aws-sdk'
 
+gem 'gon'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 gem 'compass-rails', '~> 1.1.3'

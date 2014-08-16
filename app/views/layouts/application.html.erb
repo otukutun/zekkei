@@ -3,13 +3,15 @@
 <head>
 <title>Zekkei</title>
 <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+<%= include_gon %>
 <%= javascript_include_tag '//maps.googleapis.com/maps/api/js?v=3.exp' %>
+<%= javascript_include_tag '//google-maps-utility-library-v3.googlecode.com/svn/tags/markerclustererplus/2.0.14/src/markerclusterer_packed.js' %>
 
 <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
 <%= csrf_meta_tags %>
 </head>
-<body data-spy="scroll" data-target="#main-nav">
+<body>
 <!-- WRAPPER -->
 <div class="wrapper">
 

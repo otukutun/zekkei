@@ -101,6 +101,11 @@ GEM
     erubis (2.7.0)
     execjs (2.2.1)
     fssm (0.2.10)
+    gon (5.1.2)
+      actionpack (>= 2.3.0)
+      json
+      multi_json
+      request_store (>= 1.0.5)
     has_scope (0.6.0.rc)
       actionpack (>= 3.2, < 5)
       activesupport (>= 3.2, < 5)
@@ -191,6 +196,7 @@ GEM
     rdoc (4.1.1)
       json (~> 1.4)
     ref (1.0.5)
+    request_store (1.1.0)
     responders (1.0.0)
       railties (>= 3.2, < 5)
     sass (3.2.19)
@@ -252,6 +258,7 @@ DEPENDENCIES
   compass-rails (~> 1.1.3)
   devise
   formtastic!
+  gon
   jbuilder (~> 2.0)
   kaminari
   less-rails

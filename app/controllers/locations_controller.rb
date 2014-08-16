@@ -1,6 +1,8 @@
 class LocationsController < ApplicationController
   def show
     @location = Location.where(:flag => true).sample
+    gon.longitude = @location.longitude
+    gon.latitude = @location.latitude
   end
 
   def fetch_location
