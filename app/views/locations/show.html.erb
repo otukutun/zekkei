@@ -1,20 +1,25 @@
 <!-- header -->
-  <header class="jumbotron header" id="header">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 left">
-          <div class="avatar">
-            <%= image_tag @location.photo.url(:large), alt: 'image', class: 'img-responsive', id: 'photo' %>
-          </div>
+<header class="jumbotron header" id="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 left">
+        <div class="avatar">
+          <%= image_tag @location.photo.url(:large), alt: 'image', class: 'img-responsive', id: 'photo' %>
         </div>
-        <div class="col-md-6 right">
-          <h1 class="hide"></h1>
-          <h2 class="heading" id="location"><%= @location.name %></h2>
-          <p id="description"><%= @location.description %></p>
-          <% if @location.creative_commons %>
-          <p><%= link_to '画像提供者', @location.author, target: '_blank'  %></p>
-          <% end %>
-          <%= button_to 'もう一回', root_path,  {class: 'btn btn-primary', id: 'refresh', method: :get} %>
+      </div>
+      <div class="col-md-6 right">
+        <h1 class="hide"></h1>
+        <h2 class="heading" id="location"><%= @location.name %></h2>
+        <p id="description"><%= @location.description %></p>
+        <% if @location.creative_commons %>
+          <div class="row">
+          <div class="col-md-3 col-md-offset-9">by <%= link_to '画像提供者', @location.author, target: '_blank'  %></div>
+          </div>
+        <% end %>
+          <div class="row">
+            <div class="col-md-offset-1 col-md-4"><%= button_to 'この場所を詳しく見る',@location.reference_url,  {class: 'btn btn-primary', id: 'refresh', method: :get} %></div>
+            <div class="col-md-4"><%= button_to 'もう一回', root_path,  {class: 'btn btn-primary', id: 'refresh', method: :get} %></div>
+          </div>
         </div>
       </div>
     </div>
