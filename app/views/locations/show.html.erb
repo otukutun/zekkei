@@ -10,7 +10,10 @@
         <div class="col-md-6 right">
           <h1 class="hide"></h1>
           <h2 class="heading" id="location"><%= @location.name %></h2>
-          <p id="description"><%= @location.description%></p>
+          <p id="description"><%= @location.description %></p>
+          <% if @location.creative_commons %>
+          <p><%= link_to '画像提供者', @location.author, target: '_blank'  %></p>
+          <% end %>
           <%= button_to 'もう一回', root_path,  {class: 'btn btn-primary', id: 'refresh', method: :get} %>
         </div>
       </div>
