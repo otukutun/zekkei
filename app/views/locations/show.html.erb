@@ -16,6 +16,7 @@
           <div class="col-md-3 col-md-offset-9">by <%= link_to '画像提供者', @location.author, target: '_blank'  %></div>
           </div>
         <% end %>
+          <div id="map"></div>
           <div class="row">
             <div class="col-md-offset-1 col-md-4"><%= link_to 'この場所を詳しく見る',@location.reference_url,  {class: 'btn btn-primary', id: 'refresh', method: :get, target: '_blank'} %></div>
             <div class="col-md-4"><%= link_to 'もう一回', root_path,  {class: 'btn btn-primary', id: 'refresh', method: :get} %></div>
