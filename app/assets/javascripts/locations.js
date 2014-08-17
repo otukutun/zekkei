@@ -2,6 +2,7 @@ $(function(){
   var map;
   function initialize() {
     var myLatlng = new google.maps.LatLng(gon.longitude, gon.latitude);
+    var style = [{"stylers":[{"hue":"#baf4c4"},{"saturation":10}]},{"featureType":"water","stylers":[{"color":"#effefd"}]},{"featureType":"all","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"labels","stylers":[{"visibility":"on"}]},{"featureType":"road","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]}];
     var mapOptions = {
       zoom: 6,
       center: myLatlng,
@@ -9,7 +10,7 @@ $(function(){
       streetViewControl: false,
       zoomControl: false,
       mapTypeId: google.maps.MapTypeId.ROADMAP,
-      styles: [{"featureType":"road","elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#fffffa"}]},{"featureType":"water","stylers":[{"lightness":50}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry","stylers":[{"lightness":40}]}]
+      styles: style
     };
     map = new google.maps.Map(document.getElementById('map'), mapOptions);
     var marker = new google.maps.Marker({
