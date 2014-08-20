@@ -6,16 +6,16 @@
         <div class="avatar">
           <%= image_tag @location.photo.url(:large), alt: 'image', class: 'img-responsive', id: 'photo' %>
         </div>
+        <% if @location.creative_commons %>
+          <div class="row" style="margin-top:10px;">
+          <div class="col-md-4 col-md-offset-8">by <%= link_to '写真提供元', @location.author, target: '_blank'  %></div>
+          </div>
+        <% end %>
       </div>
       <div class="col-md-6 right">
         <h1 class="hide"></h1>
         <h2 class="heading" id="location"><%= @location.name %>&nbsp;<small><%= @location.address %></small></h2>
         <p id="description"><%= @location.description %></p>
-        <% if @location.creative_commons %>
-          <div class="row">
-          <div class="col-md-3 col-md-offset-9">by <%= link_to '写真提供元', @location.author, target: '_blank'  %></div>
-          </div>
-        <% end %>
         <div class="row">
         <div id="map" class="col-md-3 col-md-offset-3" style='width: 300px; height: 200px; border-radius: 20px; -webkit-border-radius: 20px; -moz-border-radius: 20px; margin-bottom:30px;'></div>
         </div>
