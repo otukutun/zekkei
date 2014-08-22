@@ -22,6 +22,9 @@ gem 'devise'
 gem 'kaminari'
 gem 'will_paginate', '~> 3.0'
 
+#analytics
+gem 'google-analytics-rails'
+
 # admin
 gem 'activeadmin', github: 'gregbell/active_admin'
 
