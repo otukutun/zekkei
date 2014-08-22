@@ -6,11 +6,11 @@
 <%= include_gon %>
 <%= javascript_include_tag '//maps.googleapis.com/maps/api/js?v=3.9&sensor=false' %>
 <%= javascript_include_tag '//google-maps-utility-library-v3.googlecode.com/svn/tags/markerclustererplus/2.0.14/src/markerclusterer_packed.js' %>
+<%= javascript_include_tag '/javascripts/google_analytics.js' if Rails.env.production? %>
 
 <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
 <%= csrf_meta_tags %>
-<%= render 'google_analytics' if Rails.env.production? %>
 </head>
 <body>
 <!-- WRAPPER -->
