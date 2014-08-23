@@ -16,7 +16,7 @@ $(function(){
     var marker = new google.maps.Marker({
             position: myLatlng,
               map: map,
-              icon: '/images/pin.png'
+              icon: 'images/pin.png'
         });
   }
 
