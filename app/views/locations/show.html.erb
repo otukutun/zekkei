@@ -20,7 +20,7 @@
           <div class="row" style="margin-top:25px;">
             <div class="col-md-offset-1 col-md-3"><%= link_to 'wikipedia',@location.wikipedia_url,  {class: 'btn btn-success', id: 'refresh', method: :get, target: '_blank'} %></div>
             <div class="col-md-4"><%= link_to 'この場所を詳しく見る',@location.reference_url,  {class: 'btn btn-success', id: 'refresh', method: :get, target: '_blank'} %></div>
-            <div class="col-md-4"><%= link_to '他の場所を見る', root_path,  {class: 'btn btn-default', id: 'refresh', method: :get} %></div>
+            <div class="col-md-4"><%= link_to '他の場所を見る', '#',  {class: 'btn btn-default', id: 'refresh', method: :get, onclick: 'location.reload(true); return false;'} %></div>
           </div>
         </div>
       </div>
