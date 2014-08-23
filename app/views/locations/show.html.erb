@@ -5,13 +5,11 @@
       <%= image_tag @location.photo.url(:large), alt: 'image', class: 'img-responsive', id: 'photo' %>
     </div>
   </div>
-  <% if @location.creative_commons %>
-    <div class="row" style="margin-top:10px;">
-    <div class="col-md-2 col-md-offset-10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= link_to '写真提供元', @location.author, target: '_blank'  %></div>
-  </div>
-<% end %>
-  <div class="row">
+  <div class="row" style="margin-top:10px;">
     <div class="col-md-offset-4 col-md-4"><%= link_to '他の場所を見る', '#',  {class: 'btn btn-info btn-block', id: 'refresh', method: :get, onclick: 'location.reload(true); return false;'} %></div>
+    <% if @location.creative_commons %>
+      <div class="col-md-2 col-md-offset-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= link_to '写真提供元', @location.author, target: '_blank'  %></div>
+    <% end %>
   </div>
 </div>
   </div>
