@@ -1,29 +1,19 @@
-<!-- header -->
-<header class="jumbotron header" id="header">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <%= image_tag @location.photo.url(:large), alt: 'image', class: 'img-responsive', id: 'photo' %>
-        <% if @location.creative_commons %>
-          <div class="row" style="margin-top:10px;">
-            <div class="col-md-4 col-md-offset-8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= link_to '写真提供元', @location.author, target: '_blank'  %></div>
-          </div>
-        <% end %>
-      </div>
-      <div class="col-md-6 right">
-        <h1 class="hide"></h1>
-        <div class="row" style="margin-bottom:40px;margin-top:30px;">
-        <div id="map" class="col-md-3 col-md-offset-3" style='width: 300px; height: 200px; border-radius: 100px; -webkit-border-radius: 100px; -moz-border-radius: 100px; margin-bottom:10px;'></div>
-        </div>
-        <h2 class="heading text-center" id="location" style="margin-bottom:25px;"><%= @location.name %>&nbsp;<small><%= @location.address %></small></h2>
-        <p id="description"><%= truncate @location.description, {length: 79} %></p>
-          <div class="row" style="margin-top:25px;">
-            <div class="col-md-offset-1 col-md-3"><%= link_to 'wikipedia',@location.wikipedia_url,  {class: 'btn btn-success', id: 'refresh', method: :get, target: '_blank'} %></div>
-            <div class="col-md-4"><%= link_to 'この場所を詳しく見る',@location.reference_url,  {class: 'btn btn-success', id: 'refresh', method: :get, target: '_blank'} %></div>
-            <div class="col-md-4"><%= link_to '他の場所を見る', '#',  {class: 'btn btn-default', id: 'refresh', method: :get, onclick: 'location.reload(true); return false;'} %></div>
-          </div>
-        </div>
-      </div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h2 class="heading text-center" id="location" style="margin-top:25px;margin-bottom:25px;"><%= @location.name %>&nbsp;<small><%= @location.address %></small></h2>
+      <%= image_tag @location.photo.url(:large), alt: 'image', class: 'img-responsive', id: 'photo' %>
     </div>
-  </header>
-  <!-- end header -->
+  </div>
+  <% if @location.creative_commons %>
+    <div class="row" style="margin-top:10px;">
+    <div class="col-md-2 col-md-offset-10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= link_to '写真提供元', @location.author, target: '_blank'  %></div>
+  </div>
+<% end %>
+  <div class="row">
+    <div class="col-md-offset-4 col-md-4"><%= link_to '他の場所を見る', '#',  {class: 'btn btn-info btn-block', id: 'refresh', method: :get, onclick: 'location.reload(true); return false;'} %></div>
+  </div>
+</div>
+  </div>
+</div>
+<!-- end header -->
