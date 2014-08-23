@@ -2,7 +2,7 @@
 <header class="jumbotron header" id="header">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 left">
+      <div class="col-md-6">
         <%= image_tag @location.photo.url(:large), alt: 'image', class: 'img-responsive', id: 'photo' %>
         <% if @location.creative_commons %>
           <div class="row" style="margin-top:10px;">
@@ -18,7 +18,7 @@
         <h2 class="heading text-center" id="location" style="margin-bottom:25px;"><%= @location.name %>&nbsp;<small><%= @location.address %></small></h2>
         <p id="description"><%= truncate @location.description, {length: 82} %></p>
           <div class="row" style="margin-top:25px;">
-            <div class="col-md-offset-1 col-md-3"><%= link_to 'wikipedia',@location.reference_url,  {class: 'btn btn-success', id: 'refresh', method: :get, target: '_blank'} %></div>
+            <div class="col-md-offset-1 col-md-3"><%= link_to 'wikipedia',@location.wikipedia_url,  {class: 'btn btn-success', id: 'refresh', method: :get, target: '_blank'} %></div>
             <div class="col-md-4"><%= link_to 'この場所を詳しく見る',@location.reference_url,  {class: 'btn btn-success', id: 'refresh', method: :get, target: '_blank'} %></div>
             <div class="col-md-4"><%= link_to '他の場所を見る', root_path,  {class: 'btn btn-default', id: 'refresh', method: :get} %></div>
           </div>
