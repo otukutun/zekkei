@@ -16,7 +16,7 @@
         <div id="map" class="col-md-3 col-md-offset-3" style='width: 300px; height: 200px; border-radius: 100px; -webkit-border-radius: 100px; -moz-border-radius: 100px; margin-bottom:10px;'></div>
         </div>
         <h2 class="heading text-center" id="location" style="margin-bottom:25px;"><%= @location.name %>&nbsp;<small><%= @location.address %></small></h2>
-        <p id="description"><%= truncate @location.description, {length: 82} %></p>
+        <p id="description"><%= truncate @location.description, {length: 79} %></p>
           <div class="row" style="margin-top:25px;">
             <div class="col-md-offset-1 col-md-3"><%= link_to 'wikipedia',@location.wikipedia_url,  {class: 'btn btn-success', id: 'refresh', method: :get, target: '_blank'} %></div>
             <div class="col-md-4"><%= link_to 'この場所を詳しく見る',@location.reference_url,  {class: 'btn btn-success', id: 'refresh', method: :get, target: '_blank'} %></div>
