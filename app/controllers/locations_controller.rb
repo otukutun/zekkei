@@ -2,7 +2,6 @@ class LocationsController < ApplicationController
   before_action :set_url, only: :show
   def show
     #@location = Location.find(:all, :conditions => [)
-    #@location = Location.where(:flag => true).sample
     #gon.longitude = @location.longitude
     #gon.latitude = @location.latitude
   end
@@ -12,6 +11,10 @@ class LocationsController < ApplicationController
     #max and flag=true の条件で1件取得
     #@location = Location.where(flag: true).limit(1).order("RANDOM()")
     @location = Location.where(:flag => true).sample
+  end
+  def random
+    @location = Location.where(:flag => true).sample
+    redirect_to action: 'show', url: @location.url, status: 201
   end
 
   private

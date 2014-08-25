@@ -11,7 +11,7 @@ Rails.application.routes.draw do
       get 'fetch_location'
     end
   end
-  root 'locations#show'
+  root 'locations#random'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
