@@ -44,6 +44,7 @@ gem 'less-rails'
 gem 'twitter-bootswatch-rails'
 gem 'twitter-bootswatch-rails-helpers'
 gem 'therubyracer'
+gem 'friendly_id'
 
 gem 'rails-assets-jquery'
 gem 'rails-assets-jquery-ui'

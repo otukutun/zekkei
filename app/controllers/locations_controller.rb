@@ -1,8 +1,10 @@
 class LocationsController < ApplicationController
+  before_action :set_url, only: :show
   def show
-    @location = Location.where(:flag => true).sample
-    gon.longitude = @location.longitude
-    gon.latitude = @location.latitude
+    #@location = Location.find(:all, :conditions => [)
+    #@location = Location.where(:flag => true).sample
+    #gon.longitude = @location.longitude
+    #gon.latitude = @location.latitude
   end
 
   def fetch_location
@@ -12,4 +14,8 @@ class LocationsController < ApplicationController
     @location = Location.where(:flag => true).sample
   end
 
+  private
+  def set_url
+    @location = Location.where(["flag = ? and url = ?", true, params[:url]]).sample
+  end
 end

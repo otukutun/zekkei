@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140823045229) do
+ActiveRecord::Schema.define(version: 20140825142424) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -65,5 +65,7 @@ ActiveRecord::Schema.define(version: 20140823045229) do
     t.string   "address"
     t.string   "wikipedia_url"
   end
+
+  add_index "locations", ["name"], name: "index_locations_on_name"
 
 end

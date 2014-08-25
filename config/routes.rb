@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
+  get ':url', to: 'locations#show'
   resources :locations do
     collection do
       get 'fetch_location'
