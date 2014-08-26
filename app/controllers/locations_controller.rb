@@ -1,6 +1,11 @@
 class LocationsController < ApplicationController
   before_action :set_url, only: :show
-  def show
+  def show(e = nil)
+    if @location == nil
+    logger.info "Routing 404 with exception: #{e.message}" if e
+
+    render template: 'errors/error_404', status: 404, layout: 'application', content_type: 'text/html'
+    end
     #@location = Location.find(:all, :conditions => [)
     #gon.longitude = @location.longitude
     #gon.latitude = @location.latitude

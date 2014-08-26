@@ -13,37 +13,30 @@
 <%= csrf_meta_tags %>
 </head>
 <body>
-<!-- WRAPPER -->
-<div class="wrapper">
-
-  <!-- main navigation -->
-  <nav class="navbar navbar-default navbar-fixed-top" id="main-nav" role="navigation">
-    <div class="container">
-      <!-- brand and toggle -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".main-nav-collapse">
-          <span class="sr-only">Toggle Navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>         
-        <%= link_to '絶景スイッチ', root_path, class: 'navbar-brand' %>
-      </div>
-
+<!-- main navigation -->
+<nav class="navbar navbar-default navbar-fixed-top" id="main-nav" role="navigation">
+  <div class="container">
+    <!-- brand and toggle -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".main-nav-collapse">
+        <span class="sr-only">Toggle Navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>         
+      <%= link_to '絶景スイッチ', root_path, class: 'navbar-brand' %>
     </div>
-  </nav>
-  <!-- end main navigation -->
+
+  </div>
+</nav>
+<!-- end main navigation -->
 
 <%= yield %>
 
-  <!-- footer -->
-  <footer class="container">
-    <p>Copyright 2014 <%= link_to '@otukutun', 'https://twitter.com/otukutun' %>. All Rights Reserved.</p>
-  </footer>
-  <!-- end footer -->
-
-</div>
-<!-- END WRAPPER -->
-
+<!-- footer -->
+<footer class="container">
+  <p>Copyright 2014 <%= link_to '@otukutun', 'https://twitter.com/otukutun' %>. All Rights Reserved.</p>
+</footer>
+<!-- end footer -->
 </body>
 </html>
