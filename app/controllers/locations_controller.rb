@@ -19,7 +19,7 @@ class LocationsController < ApplicationController
   end
   def random
     @location = Location.where(:flag => true).sample
-    redirect_to action: 'show', url: @location.url, status: 301
+    redirect_to action: 'show', url: @location.url, status: 303
   end
 
   private
