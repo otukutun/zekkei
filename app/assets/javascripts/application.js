@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery-ui
-//= require share
 //= require bootstrap
 //= require sandstone/loader
 //= require sandstone/bootswatch
