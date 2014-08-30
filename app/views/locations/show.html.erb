@@ -8,10 +8,18 @@
   <div class="row" style="margin-top:10px;">
     <div class="col-md-offset-4 col-md-4"><%= link_to '他の場所を見る', root_path,  {class: 'btn btn-info btn-block', method: :get} %></div>
     <% if @location.creative_commons %>
-      <div class="col-md-2 col-md-offset-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= link_to '写真提供元', @location.author, target: '_blank'  %></div>
+      <div class="col-md-2 col-md-offset-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= link_to '写真提供元', @location.author, target: '_blank'  %></div>
     <% end %>
   </div>
+  <div class="row">
+    <div class="col-md-offset-10 col-md-2">
+      <!-- Go to www.addthis.com/dashboard to customize your tools -->
+      <div class="addthis_sharing_toolbox"></div>
+    </div>
+  </div>
+
 </div>
   </div>
 </div>
 <!-- end header -->
+

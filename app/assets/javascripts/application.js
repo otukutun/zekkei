@@ -12,9 +12,11 @@
 //
 //= require jquery
 //= require jquery-ui
+//= require share
 //= require bootstrap
 //= require sandstone/loader
 //= require sandstone/bootswatch
 //= require bootstrap
 //= require turbolinks
 //= require locations
+

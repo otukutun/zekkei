@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang='ja'>
 <head>
-<title>Zekkei</title>
+<title>絶景スイッチ~気になる絶景を見つけよう~</title>
 <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 <%= include_gon %>
-<%= javascript_include_tag '//maps.googleapis.com/maps/api/js?v=3.9&sensor=false' %>
-<%= javascript_include_tag '//google-maps-utility-library-v3.googlecode.com/svn/tags/markerclustererplus/2.0.14/src/markerclusterer_packed.js' %>
 <%= analytics_init if Rails.env.production? %>
 
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<%= javascript_include_tag '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5401c0cf500c7faa' %>
 <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
 <%= csrf_meta_tags %>
