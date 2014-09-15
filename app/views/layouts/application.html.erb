@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='ja'>
 <head>
-<title>絶景スイッチ~気になる絶景を見つけよう~</title>
+<title>絶景スイッチ~<%= @location.name unless @location.name.empty?%>~</title>
 <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 <%= include_gon %>
 <%= analytics_init if Rails.env.production? %>
